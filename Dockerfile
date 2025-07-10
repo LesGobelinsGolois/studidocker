@@ -16,3 +16,6 @@ COPY . .
 
 #construction de l'application
 RUN yarn run build
+
+#etape 2 : mettre à disposition un serveur web
+FROM nginx:alpine3.19
