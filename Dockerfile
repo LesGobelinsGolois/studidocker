@@ -19,3 +19,7 @@ RUN yarn run build
 
 #etape 2 : mettre à disposition un serveur web
 FROM nginx:alpine3.19
+
+#importation de notre configuration nginx a la place de celle par defaut
+#on a ausis la config dans nginx/nginx.conf
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
